@@ -6,11 +6,6 @@ namespace TrabajoPractico.Models
 {
     public class appDBcontext : DbContext
     {
-        public appDBcontext(DbContextOptions<appDBcontext> options)
-         : base(options)
-        {
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

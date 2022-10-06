@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V5W2vmQT6MamlqBl3fn2iTerDAq4kAkVLuJgRTfI1XA=",
+  "Hash": "RRPpNznmGxEaKe1PGCt12J92bz6k0KhdNSQIbdZyGuA=",
   "Source": "TrabajoPractico",
   "BasePath": "_content/TrabajoPractico",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\usuario\\Desktop\\Programacion\\Laboratorio de Computacion IV(4)\\Visual\\TrabajoPractico\\TrabajoPractico\\wwwroot\\js\\preview.js",
+      "SourceId": "TrabajoPractico",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\usuario\\Desktop\\Programacion\\Laboratorio de Computacion IV(4)\\Visual\\TrabajoPractico\\TrabajoPractico\\wwwroot\\",
+      "BasePath": "_content/TrabajoPractico",
+      "RelativePath": "js/preview.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\preview.js"
     },
     {
       "Identity": "C:\\Users\\usuario\\Desktop\\Programacion\\Laboratorio de Computacion IV(4)\\Visual\\TrabajoPractico\\TrabajoPractico\\wwwroot\\js\\site.js",

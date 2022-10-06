@@ -1,0 +1,61 @@
+﻿@model TrabajoPractico.Models.Libro
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Libro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="titulo" class="control-label"></label>
+                <input asp-for="titulo" class="form-control" />
+                <span asp-validation-for="titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="resumen" class="control-label"></label>
+                <input asp-for="resumen" class="form-control" />
+                <span asp-validation-for="resumen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <img src="" id="imagen" style="max-width:50px" class="circle"/>
+                <label asp-for="foto" class="control-label">
+                    <input asp-for="foto" name="foto" id="seleccionImg" type="file" accept="image/jpeg" />
+                </label>
+                <span asp-validation-for="foto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaPublicacion" class="control-label"></label>
+                <input asp-for="fechaPublicacion" class="form-control" />
+                <span asp-validation-for="fechaPublicacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="generoid" class="control-label">Genero</label>
+                <select asp-for="generoid" class ="form-control" asp-items="ViewBag.generodescripcion"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="autorid" class="control-label">Autor</label>
+                <select asp-for="autorid" class ="form-control" asp-items="ViewBag.autornombre"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/js//preview.js"></script>
